@@ -20,7 +20,7 @@ Route::get('/details/{id}', 'DetailController@index')->name('details');
 Route::post('/details/{id}', 'DetailController@add')->name('add-cart');
 Route::get('/success', 'CartController@success')->name('success');
 
-// checkout //
+// checkoutt //
 Route::post('/checkout/callback', 'CartController@callback')->name('checkout-callback');
 
 Route::get('/register/success', 'Auth\RegisterController@success')->name('register-success');
